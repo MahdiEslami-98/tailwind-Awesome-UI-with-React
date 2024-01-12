@@ -1,13 +1,12 @@
-import { LogoIcon } from "@/utils/icons";
+import {LogoIcon} from "@/utils/icons/Logo.tsx";
+import Nav from "./Nav.tsx";
 
-const Header = () => {
-  return (
-    <div className="px-6 ">
-      <div className="flex ">
-        <LogoIcon />
-      </div>
-    </div>
-  );
-};
-
-export default Header;
+const Header = () =>{
+    return (
+        <header className={'w-full flex py-4 px-10 bg-secondary justify-around'}>
+            <LogoIcon />
+            <Nav />
+        </header>
+    )
+}
+export default Header
