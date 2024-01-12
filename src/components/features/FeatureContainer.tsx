@@ -20,7 +20,7 @@ const FeatureContainer = () => {
     <LoveIcon />,
   ];
   return (
-    <div className="ga pb container mx-auto grid grid-cols-3 gap-x-20 gap-y-16 px-6 py-20">
+    <div className="mx-auto grid w-10/12 grid-cols-3 gap-x-20 gap-y-16 px-6 py-20">
       {features.map((svg, index) => (
         <Feature key={index} icon={svg} />
       ))}
